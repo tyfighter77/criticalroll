@@ -14,7 +14,7 @@ angular.module('criticalApp', ['ui.router','angularModalService'])
     .state('fumble', {
       url: '/fumble',
       templateUrl: './views/fumbleTmpl.html',
-      controller: 'hitCtrl'
+      controller: 'fumbleCtrl'
     });
     $urlRouterProvider.otherwise('/');
   });

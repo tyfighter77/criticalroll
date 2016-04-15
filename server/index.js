@@ -5,7 +5,7 @@ var mongoose = require('mongoose');
 var app = express();
 
 app.use(bodyParser.json());
-app.use(express.static(__direname + './../public'));
+app.use(express.static(__dirname + './../public'));
 
 var port = 3000;
 var mongoURI = 'mongodb://localhost:27017/criticalroll';
