@@ -1,4 +1,72 @@
+@font-face {
+    font-family: 'Pirata One';
+    src: url('./../assets/fonts/PirataOne-Regular.ttf') format('truetype');
+}
+
+* {
+    border: 0px;
+}
 body {
-  background-color: black;
-  color: white;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+}
+.wordmarkContainer {
+    display: block;
+    margin: 150px auto 50px;
+    text-align: center;
+}
+.wordmark {
+    max-width: 700px;
+}
+.diceWrapper {
+    display: block;
+    margin: 100px auto;
+    text-align: center;
+}
+.diceContainer {
+    display: inline-block;
+    margin: 0 20px;
+    width: 200px;
+    font-size: 42px;
+    font-family: 'Pirata One';
+}
+.dice {
+    height: 120px;
+    cursor: pointer;
+}
+.diceContainer:hover {
+    animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+@keyframes shake {
+    10%, 90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+    20%, 80% {
+        transform: translate3d(2px, 0, 0);
+    }
+    30%, 50%, 70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+    40%, 60% {
+        transform: translate3d(4px, 0, 0);
+    }
+}
+.hitLabel:hover {
+    cursor: pointer;
+}
+.fumbleLabel:hover {
+    cursor: pointer;
+}
+
+.green {
+  color: #00ff48;
+}
+
+.red {
+  color: #fe1c51;
 }
