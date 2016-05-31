@@ -11,11 +11,12 @@ body {
     box-sizing: border-box;
     background-color: black;
     color: white;
+    text-align: center;
 }
 .wordmarkContainer {
     display: block;
     margin: 150px auto 50px;
-    text-align: center;
+    /*text-align: center;*/
 }
 .wordmark {
     max-width: 700px;
@@ -23,7 +24,7 @@ body {
 .diceWrapper {
     display: block;
     margin: 100px auto;
-    text-align: center;
+    /*text-align: center;*/
 }
 .diceContainer {
     display: inline-block;
@@ -87,12 +88,12 @@ body {
   width: 500px;
   height: 350px;
   position: relative;
-  margin: -500px auto;
+  margin: -400px auto;
   background-color: black;
   border-radius: 10px;
   border: 1px solid white;
   z-index: 100;
-  text-align: center;
+  /*text-align: center;*/
   font-size: 32px;
   opacity: 0;
   animation: myFade 0.2s linear 0.2s ;
@@ -143,12 +144,51 @@ body {
   transition:.5s;
 }
 
+.resultContainer {
+  /*text-align: center;*/
+  margin: 13% auto 0;
+  width: 30%;
+}
 
-.resultMessage {
-  font-size: 42px;
+.hitMessage {
+  line-height: 120px;
+  font-size: 56px;
   font-family: 'Pirata One';
+  color: #00ff48;
+}
+
+.fumbleMessage {
+  line-height: 120px;
+  font-size: 56px;
+  font-family: 'Pirata One';
+  color: #fe1c51;
 }
 
 .resultDesc {
+  font-size: 30px;
   font-family: 'Cinzel', serif;
+}
+
+.buttonContainer {
+  position: absolute;
+  bottom: 10%;
+  right: 0;
+  left: 0;
+  font-size: 40px;
+  font-family: 'Pirata One';
+}
+
+.button {
+  display: inline-block;
+  margin: 5%;
+}
+
+.button:hover {
+  color: blue;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.5s;
+  cursor: pointer;
 }

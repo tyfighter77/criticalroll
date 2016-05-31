@@ -1,11 +1,15 @@
 <div class="resultContainer">
 
-<span class="resultMessage">{{result.message}}</span>
-</br>
-<span class="resultDesc">{{result.description}}</span>
+    <span class="hitMessage">{{result.message}}</span>
+    </br>
+    <span class="resultDesc">{{result.description}}</span>
 
 </div>
 
-Reroll
+<div class="buttonContainer">
 
-New
+  <div class="button" ng-click="reload()">Reroll</div>
+
+  <div class="button" ng-click="goHome()">Start Over</div>
+
+</div>

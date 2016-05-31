@@ -5,15 +5,15 @@
 
     <div class="attackType" ng-if="type==='hit'">
       <a ui-sref="hit({type:'hitBludgeoning'})" ng-click="close(false)">Bludgeoning</a></br>
-      <a ui-sref="hit({type:'hitPiercing'})">Piercing</a></br>
-      <a ui-sref="hit({type:'hitSlashing'})">Slashing</a></br>
-      <a ui-sref="hit({type:'hitMagic'})">Magic</a>
+      <a ui-sref="hit({type:'hitPiercing'})" ng-click="close(false)">Piercing</a></br>
+      <a ui-sref="hit({type:'hitSlashing'})" ng-click="close(false)">Slashing</a></br>
+      <a ui-sref="hit({type:'hitMagic'})" ng-click="close(false)">Magic</a>
     </div>
     <div class="attackType" ng-if="type==='fumble'">
-      <a ui-sref="fumble({type:'fumbleMelee'})">Melee</a></br>
-      <a ui-sref="fumble({type:'fumbleRanged'})">Ranged</a></br>
-      <a ui-sref="fumble({type:'fumbleNatural'})">Natural</a></br>
-      <a ui-sref="fumble({type:'fumbleMagic'})">Magic</a>
+      <a ui-sref="fumble({type:'fumbleMelee'})" ng-click="close(false)">Melee</a></br>
+      <a ui-sref="fumble({type:'fumbleRanged'})" ng-click="close(false)">Ranged</a></br>
+      <a ui-sref="fumble({type:'fumbleNatural'})" ng-click="close(false)">Natural</a></br>
+      <a ui-sref="fumble({type:'fumbleMagic'})" ng-click="close(false)">Magic</a>
     </div>
 </div>
 <div class="fade" ng-click="close(false)"></div>
