@@ -1,5 +1,10 @@
 angular.module('criticalApp')
-    .controller('fumbleCtrl', function($scope, ModalService) {
+    .controller('fumbleCtrl', function($scope, ModalService, $stateParams, mainService) {
 
-        $scope.test = "Fumble Ctrl Works";
+        $scope.type = $stateParams.type;
+
+        mainService.getRoll($scope.type)
+            .then(function(response) {
+                $scope.result = response;
+            });
     });

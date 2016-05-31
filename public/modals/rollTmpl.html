@@ -1,0 +1,19 @@
+<div class="modal">
+
+    <span class="selectText">select your attack type:</span>
+    </br>
+
+    <div class="attackType" ng-if="type==='hit'">
+      <a ui-sref="hit({type:'hitBludgeoning'})" ng-click="close(false)">Bludgeoning</a></br>
+      <a ui-sref="hit({type:'hitPiercing'})">Piercing</a></br>
+      <a ui-sref="hit({type:'hitSlashing'})">Slashing</a></br>
+      <a ui-sref="hit({type:'hitMagic'})">Magic</a>
+    </div>
+    <div class="attackType" ng-if="type==='fumble'">
+      <a ui-sref="fumble({type:'fumbleMelee'})">Melee</a></br>
+      <a ui-sref="fumble({type:'fumbleRanged'})">Ranged</a></br>
+      <a ui-sref="fumble({type:'fumbleNatural'})">Natural</a></br>
+      <a ui-sref="fumble({type:'fumbleMagic'})">Magic</a>
+    </div>
+</div>
+<div class="fade" ng-click="close(false)"></div>

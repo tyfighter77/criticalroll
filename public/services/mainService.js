@@ -1,4 +1,4 @@
-angular.module("app").service("mainService", function($http) {
+angular.module("criticalApp").service("mainService", function($http) {
 
  this.getRoll = function(roll){
    return $http({

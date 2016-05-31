@@ -2,15 +2,16 @@
     <img class="wordmark" src=".\assets\images\CriticalRollTitle.png">
 </div>
 <div class="diceWrapper">
-    <div class="diceContainer" ng-mouseover="green=true" ng-mouseleave="green=false">
+    <div class="diceContainer"
+    ng-click="openRollModal('hit')" ng-mouseover="green=true" ng-mouseleave="green=false">
         <img class="dice" src=".\assets\images\d20green.png">
         </br>
             <span class="hitLabel" ng-class="{green:green}">Hit!</span>
     </div>
-    <div class="diceContainer" ng-mouseover="red=true" ng-mouseleave="red=false">
+    <div class="diceContainer"
+    ng-click="openRollModal('fumble')" ng-mouseover="red=true" ng-mouseleave="red=false">
         <img class="dice" src=".\assets\images\d20red.png">
         </br>
             <span class="fumbleLabel" ng-class="{red:red}">Fumble!</span>
     </div>
 </div>
-{{test}}
